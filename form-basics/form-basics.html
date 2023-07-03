@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form basics</title>
+</head>
+<body>
+  <form action="example.com/path" method="post">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" placeholder="James...">
+  </form>
+
+  <br>
+
+  <!-- <div>
+    <label for="username">What's your name?</label>
+    <input type="text" id="username">
+    <button class="greet-btn">greet-btn</button>
+  </div>
+  <h1 class="greeting"></h1> -->
+
+
+  <form action="example.com/path" method="post">
+    <label for="user_email">Email Address:</label>
+    <input type="email" id="user_email" name="email"placeholder="you@example.com">
+
+    <label for="user_password">Password:</label>
+    <input type="password" name="password" id="user_password">
+
+    <label for="amount">Amount:</label>
+    <input type="number" name="amount" id="amount">
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" name="dob" id="dob">
+
+    <textarea name="comment" id="comment" cols="30" rows="10">Enter your comment here.</textarea>
+  </form>
+
+  <form action="example.com/path" method="post">
+    <select name="Car" id="car">
+      <option value="mercedes">Mercedes</option>
+      <option value="tesla">Tesla</option>
+      <option value="volvo" selected>Volvo</option>
+      <option value="bmw">BMW</option>
+      <option value="mini">Mini</option>
+      <option value="ford">Ford</option>
+    </select>
+
+    <select name="fashion" id="fashion">
+      <optgroup label="CLothing">
+        <option value="t_shirt">T-Shirts</option>
+        <option value="sweater">Sweaters</option>
+        <option value="coats">Coats</option>
+      </optgroup>
+      <optgroup label="Foot Wear">
+        <option value="sneakers">Sneakers</option>
+        <option value="boots">Boots</option>
+        <option value="sandals">Sandals</option>
+      </optgroup>
+    </select>
+
+    <h1>Radio buttons</h1>
+    <div><input type="radio" name="ticket_type" id="child"><label for="child">Child</label></div>
+    <div><input type="radio" name="ticket_type" id="adult" checked><label for="adult">Adult</label></div>
+    <div><input type="radio" name="ticket_type" id="senior"><label for="senior">senior</label></div>
+
+    <h1>Checkboxes</h1>
+    <div><input type="checkbox" name="topping" id="sausage"><label for="sausage">Sausage</label></div>
+    <div><input type="checkbox" name="topping" id="onions"><label for="onions">Onions</label></div>
+    <div><input type="checkbox" name="topping" id="pepperoni"><label for="pepperoni">Pepperoni</label></div>
+    <div><input type="checkbox" name="topping" id="mushrooms"><label for="mushrooms">mushrooms</label></div>
+
+    <h2>Singular checkbox</h2>
+    <div><input type="checkbox" name="newsletter" id="news_letter"><label for="newsletter">Send me the newsletter.</label></div>
+
+    <h1>The button</h1>
+    <button>Click me</button>
+
+    <h2>Submit button</h2>
+    <button type="submit">Submit</button>
+
+    <h2>Reset Button</h2>
+    <button type="reset">Reset</button>
+
+    <h2>Generic Button</h2>
+    <button type="button">Click to Toggle</button>
+
+    <h1>Fieldset</h1>
+    <fieldset>
+      <label for="first_name">First Name</label>
+      <input type="text" name="first_name" id="first_name">
+
+      <label for="last_name">Last Name</label><input type="text" name="last_name" id="last_name">
+    </fieldset>
+
+    <h1>Legend</h1>
+    <fieldset>
+      <legend>Contact details</legend>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+
+      <label for="phone_number">Phone number:</label>
+      <input type="tel" name="phone_number" id="phone_number">
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+    </fieldset>
+
+    <fieldset>
+      <legend>Delivery details</legend>
+
+      <label for="street_address">Street Address:</label>
+      <input type="text" name="street_address" id="street_address">
+
+      <label for="city">City:</label>
+      <input type="text" name="city" id="city">
+
+      <label for="zip-code">Zip Code:</label><input type="text" name="zip_code" id="zip_code">
+
+    </fieldset>
+
+    <fieldset>
+      <legend>What would you like to drink?</legend>
+
+      <div><input type="radio" name="drink" id="coffee"><label for="coffee">Coffee</label></div>
+
+      <div><input type="radio" name="drink" id="tea"><label for="tea">Tea</label></div>
+
+      <div><input type="radio" name="drink" id="soda"><label for="soda">Soda</label></div>
+    </fieldset>
+  </form>
+
+
+</body>
+</html>
